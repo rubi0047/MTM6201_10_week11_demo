@@ -46,3 +46,31 @@ body {
         background-color: darkred;
     }
 }
+
+@media (hover:hover) {
+    .hover-query::after {
+        content: "(Your device supports hover)";
+        color: green;
+    }
+}
+
+@media (hover:none) {
+    .hover-query::after {
+        content: "(Your device does not support hover)";
+        color: red;
+    }
+}
+
+@media (orientation: portrait) {
+    .orientation::after {
+        content: "(Portrait mode)";
+        color: red;
+    }
+}
+
+@media (orientation: landscape) {
+    .orientation::after {
+        content: "(Landscape mode)";
+        color: green;
+    }
+}
