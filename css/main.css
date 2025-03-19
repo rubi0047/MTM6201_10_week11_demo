@@ -31,3 +31,18 @@ body {
         display: none;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .px-query {
+        background-color: darkslategray;
+    }
+
+    .em-query {
+        background-color: darkred;
+    }
+}
